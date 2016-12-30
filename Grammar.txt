@@ -1,0 +1,18 @@
+Grammar
+
+expression:
+    addTerm
+
+addTerm
+    multTerm + addTerm
+    multTerm - addTerm
+    multTerm
+
+multTerm:
+    term * multTerm
+    term / multTerm
+    term
+
+term
+    number
+    ( expression )
